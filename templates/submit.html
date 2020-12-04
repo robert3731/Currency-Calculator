@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Currency Calculator</title>
+        <script>
+        var currency = {{currency}}
+        var amount = {{amount}}
+        var new_amount = {{new_amount}}
+        </script>
+    </head>
+    <body>
+        <h1>Currency Calculator</h1>
+        <form action="" method="POST">
+        <label for="currency">Choose currency:</label>
+        <select name="currency" id="currency">
+            <option value="usd">USD</option>
+            <option value="aud">AUD</option>
+            <option value="cad">CAD</option>
+            <option value="eur">EUR</option>
+            <option value="huf">HUF</option>
+            <option value="chf">CHF</option>
+            <option value="gbp">GBP</option>
+            <option value="jpy">JPY</option>
+            <option value="chf">CHF</option>
+            <option value="dkk">DKK</option>
+            <option value="nok">NOK</option>
+            <option value="sek">SEK</option>
+            <option value="xdr">XDR</option>
+        </select><br><br>
+            <input name="amount" id="amount"/>
+        <input type="submit" value="Przelicz"/>
+        </form>
+        <p>{{amount}} {{currency}} = {{new_amount}} PLN</p>
+    </body>
+</html>
